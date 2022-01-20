@@ -1,0 +1,75 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!
+{% endblock %}
+
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{ asset('css/Home/Home_index.css') }}">
+{% endblock %}
+
+{% block javascripts %}
+	<script src="{{ asset('js/Home/Home_index.js') }}" type="text/javascript" defer></script>
+{% endblock %}
+
+{% block body %}
+
+	<nav class="navbar is-fixed-top" role="navigation" aria-label="dropdown navigation">
+		<ul>
+			<li class="dropdown is-right dropdown-language">
+				<div class="dropdown-trigger">
+					<button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
+						<span>🇫🇷 FR</span>
+						<span class="icon is-small">
+							<i class="fas fa-angle-down" aria-hidden="true"></i>
+						</span>
+					</button>
+				</div>
+				<div class="dropdown-menu" id="dropdown-menu-language" role="menu">
+					<div class="dropdown-content">
+						<a href="#" class="dropdown-item">
+							🇬🇧 EN
+						</a>
+						<a href="#" class="dropdown-item">
+							🇩🇪 DE
+						</a>
+						<hr class="dropdown-divider">
+						<a href="#" class="dropdown-item">
+							Ask for yours
+						</a>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</nav>
+
+	<article id="article-header">
+		<header>
+			<h1 class="title">Titre Produit</h1>
+			<h2 class="subtitle">Lorem ipsum dolor sit amet</h2>
+			<a href="" class="button is-custom">Démo 🧐</a>
+			<a href="" class="button is-link has-text-white">Commencer 🚀</a>
+
+		</header>
+		<figure id="figure-header">
+			<button class="delete close-quote"></button>
+			<blockquote cite="lien">
+				<p>Lorem ipsum dolor sit amet, consect adipiscing elit. Donec nec congue neque.</p>
+			</bloquote>
+			<figcaption>- Auteur</figcaption>
+		</figure>
+	</article>
+
+	<main>
+		<p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Donec nec congue neque. Donec sagittis tellus et sem hendrerit accumsan vitae eget neque. Phasellus placerat lobortis mi eu fermentum. Nullam ultricies ex quis imperdiet dapibus. In efficitur turpis eros, vel semper lacus accumsan id. Nam blandit mauris eu massa auctor, sit amet efficitur nulla accumsan. Integer porta, metus a vestibulum sollicitudin, ex elit vulputate ex, id condimentum sapien eros in quam.</p>
+		<p>Nam sodales nibh tellus, in porttitor metus vehicula scelerisque. Sed ac interdum nisl, id euismod dolor. In maximus eleifend pellentesque. Aliquam vehicula massa ac arcu blandit eleifend. Mauris nec libero euismod, porttitor mi nec, semper ligula. Etiam vitae sagittis velit. Integer eu pulvinar est.
+		</p>
+		<p>Nunc eget eleifend arcu. Suspendisse convallis metus vel ipsum gravida auctor. Duis elementum fringilla bibendum. In hac habitasse platea dictumst. Aliquam quis urna non tellus cursus sollicitudin. Phasellus euismod ullamcorper massa, in vestibulum arcu placerat a. Donec rutrum neque a mi fermentum vulputate. Duis scelerisque, magna id malesuada egestas, nunc tellus elementum est, id consequat leo felis quis justo. Integer cursus nisi et massa luctus pulvinar. Aliquam mattis arcu vitae fringilla volutpat. Sed sit amet bibendum mauris, imperdiet congue lectus. Vivamus a dui ut mi mollis semper.
+		</p>
+		<p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Donec nec congue neque. Donec sagittis tellus et sem hendrerit accumsan vitae eget neque. Phasellus placerat lobortis mi eu fermentum. Nullam ultricies ex quis imperdiet dapibus. In efficitur turpis eros, vel semper lacus accumsan id. Nam blandit mauris eu massa auctor, sit amet efficitur nulla accumsan. Integer porta, metus a vestibulum sollicitudin, ex elit vulputate ex, id condimentum sapien eros in quam.</p>
+		<p>Nam sodales nibh tellus, in porttitor metus vehicula scelerisque. Sed ac interdum nisl, id euismod dolor. In maximus eleifend pellentesque. Aliquam vehicula massa ac arcu blandit eleifend. Mauris nec libero euismod, porttitor mi nec, semper ligula. Etiam vitae sagittis velit. Integer eu pulvinar est.
+		</p>
+		<p>Nunc eget eleifend arcu. Suspendisse convallis metus vel ipsum gravida auctor. Duis elementum fringilla bibendum. In hac habitasse platea dictumst. Aliquam quis urna non tellus cursus sollicitudin. Phasellus euismod ullamcorper massa, in vestibulum arcu placerat a. Donec rutrum neque a mi fermentum vulputate. Duis scelerisque, magna id malesuada egestas, nunc tellus elementum est, id consequat leo felis quis justo. Integer cursus nisi et massa luctus pulvinar. Aliquam mattis arcu vitae fringilla volutpat. Sed sit amet bibendum mauris, imperdiet congue lectus. Vivamus a dui ut mi mollis semper.
+		</p>
+	</main>
+
+{% endblock %}

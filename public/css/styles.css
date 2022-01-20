@@ -1,0 +1,71 @@
+/*  Background : #3FA796
+    Primary : #F5DFBB
+
+*/
+
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins&family=Raleway&display=swap');
+
+h1 {
+    font-family: "Josefin Sans";
+    color: #f5dfbb!important;
+}
+
+h2 {
+    font-family: "Josefin Sans";
+}
+
+p, a {
+    font-family: "Poppins", "Raleway";
+    color: #4a4a4a!important;
+}
+
+/* Mobile up to 768px */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem!important;
+    }
+    p {
+        font-size: 12px!important;
+    }
+}
+/* Tablet from 769px */
+@media screen and (min-width: 769px) {
+    h1 {
+        font-size: 2.5rem!important;
+    }
+    p {
+        font-size: 16px!important;
+    }
+}
+/* Desktop from 1024px */
+@media screen and (min-width: 1024px) {
+    h1 {
+        font-size: 3rem!important;
+    }
+    p {
+        font-size: 20px!important;
+    }
+}
+
+/* Button */
+
+.is-custom {
+   background-color: #F5DFBB; 
+   border-color: transparent;
+}
+
+.is-custom:hover {
+    background-color: #dfcaaa; 
+    border-color: transparent;
+}
+
+/* Collapse */
+.collapse {
+    display: none;
+}
+
+/* Opacity */
+.opacity-0 {
+    opacity: 0;
+}
