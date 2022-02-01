@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Log in!{% endblock %}
+
+{% block body %}
+
+<h1>Lien de connexion envoyé sur votre boite mail</h1>
+<p>Veuillez entrer le code reçu</p>
+
+<form method="POST">
+    <input type="number" name="code" required>
+    <input type="email" value={{ email }} name="email" required>
+    <button type="submit">Send Login Link</button>
+</form>
+
+
+{% endblock %}

@@ -25,6 +25,10 @@ security:
                 path: app_logout
                 # where to redirect after logout
                 # target: app_any_route
+            login_link:
+                check_route: login_check
+                signature_properties: ['id']
+                max_uses: 3
 
             # activate different ways to authenticate
             # https://symfony.com/doc/current/security.html#the-firewall

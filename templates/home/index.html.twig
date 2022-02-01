@@ -4,7 +4,7 @@
 {% endblock %}
 
 {% block stylesheets %}
-	<link rel="stylesheet" href="{{ asset('css/Home/Home_index.css') }}">
+	<link rel="stylesheet" href="{{ asset('css/home/home_index.css') }}">
 {% endblock %}
 
 {% block javascripts %}
@@ -47,7 +47,7 @@
 			<h1 class="title">Titre Produit</h1>
 			<h2 class="subtitle">Lorem ipsum dolor sit amet</h2>
 			<a href="" class="button is-custom">Démo 🧐</a>
-			<a href="" class="button is-link has-text-white">Commencer 🚀</a>
+			<a href="{{ path('app_login') }}" class="button is-link has-text-white">Commencer 🚀</a>
 
 		</header>
 		<figure id="figure-header">

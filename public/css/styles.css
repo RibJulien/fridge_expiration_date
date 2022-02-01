@@ -8,55 +8,79 @@
 
 h1 {
     font-family: "Josefin Sans";
-    color: #f5dfbb!important;
+    color: #f5dfbb !important;
 }
 
 h2 {
     font-family: "Josefin Sans";
 }
 
-p, a {
+p,
+a,
+label,
+input,
+button,
+small {
     font-family: "Poppins", "Raleway";
-    color: #4a4a4a!important;
+    color: #4a4a4a !important;
 }
+
+
+
+/* Footer */
+.wave-footer {
+    margin-bottom: -7px;
+}
+
+footer {
+    background: linear-gradient(180deg, rgba(79, 182, 149, 1) 25%, rgba(84, 186, 148, 1) 75%);
+    min-height: 14rem;
+}
+
+/* End footer */
 
 /* Mobile up to 768px */
 @media screen and (max-width: 768px) {
     h1 {
-        font-size: 2rem!important;
+        font-size: 2rem !important;
     }
+
     p {
-        font-size: 12px!important;
+        font-size: 14px !important;
     }
 }
+
 /* Tablet from 769px */
 @media screen and (min-width: 769px) {
     h1 {
-        font-size: 2.5rem!important;
+        font-size: 2.5rem !important;
     }
+
     p {
-        font-size: 16px!important;
+        font-size: 16px !important;
     }
 }
+
 /* Desktop from 1024px */
 @media screen and (min-width: 1024px) {
     h1 {
-        font-size: 3rem!important;
+        font-size: 3rem !important;
     }
+
     p {
-        font-size: 20px!important;
+        font-size: 18px !important;
     }
 }
 
 /* Button */
 
 .is-custom {
-   background-color: #F5DFBB; 
-   border-color: transparent;
+    background-color: #F5DFBB;
+    border-color: transparent;
 }
 
 .is-custom:hover {
-    background-color: #dfcaaa; 
+    background-color: #dfcaaa;
     border-color: transparent;
 }
 

@@ -4,12 +4,14 @@ namespace App\Entity;
 
 use App\Repository\UserRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
  * @ORM\Entity(repositoryClass=UserRepository::class)
  * @ORM\Table(name="`user`")
+ * @UniqueEntity(fields={"email"}, message="There is already an account with this email")
  */
 class User implements UserInterface, PasswordAuthenticatedUserInterface
 {
@@ -35,6 +37,16 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
      * @ORM\Column(type="string")
      */
     private $password;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $connectlink;
+
+    /**
+     * @ORM\Column(type="string", length=6, nullable=true)
+     */
+    private $connectcode;
 
     public function getId(): ?int
     {
@@ -123,5 +135,29 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     {
         // If you store any temporary, sensitive data on the user, clear it here
         // $this->plainPassword = null;
+    }
+
+    public function getConnectlink(): ?string
+    {
+        return $this->connectlink;
+    }
+
+    public function setConnectlink(?string $connectlink): self
+    {
+        $this->connectlink = $connectlink;
+
+        return $this;
+    }
+
+    public function getConnectcode(): ?string
+    {
+        return $this->connectcode;
+    }
+
+    public function setConnectcode(?string $connectcode): self
+    {
+        $this->connectcode = $connectcode;
+
+        return $this;
     }
 }
